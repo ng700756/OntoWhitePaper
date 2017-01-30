@@ -49,6 +49,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/lim/ontologies/2017/0/untitled-ontology-62#hasTopic -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lim/ontologies/2017/0/untitled-ontology-62#hasTopic">
+        <rdfs:domain rdf:resource="http://knowitive.com/ontologies/cfdi#Paper"/>
+        <rdfs:range rdf:resource="http://knowitive.com/ontologies/cfdi#Topic"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -149,6 +158,7 @@
     <owl:NamedIndividual rdf:about="http://knowitive.com/ontologies/cfdi#More_Accurate_Question_Answering_on_Freebase">
         <rdf:type rdf:resource="http://knowitive.com/ontologies/cfdi#Title"/>
         <cfdi:hasAuthor rdf:resource="http://knowitive.com/ontologies/cfdi#Bast_Hannah"/>
+        <hasTopic rdf:resource="http://www.semanticweb.org/lim/ontologies/2017/0/untitled-ontology-62#Question_Answering"/>
     </owl:NamedIndividual>
     
 
@@ -166,9 +176,18 @@
     <owl:NamedIndividual rdf:about="http://knowitive.com/ontologies/cfdi#Systems_and_Approaches_for_Question_Answering">
         <rdf:type rdf:resource="http://knowitive.com/ontologies/cfdi#Title"/>
         <cfdi:hasAuthor rdf:resource="http://knowitive.com/ontologies/cfdi#Petr_Baudiš"/>
-        <cfdi:hasCite rdf:resource="http://knowitive.com/ontologies/cfdi#Systems_and_Approaches_for_Question_Answering"/>
+        <cfdi:hasCite rdf:resource="http://knowitive.com/ontologies/cfdi#More_Accurate_Question_Answering_on_Freebase"/>
+        <hasTopic rdf:resource="http://www.semanticweb.org/lim/ontologies/2017/0/untitled-ontology-62#Question_Answering"/>
         <cfdi:Uri rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://s3-us-west-1.amazonaws.com/phdsemantics/papers/Baudis%CC%8C+-+2015+-+Systems+and+Approaches+for+Question+Answering.pdf</cfdi:Uri>
         <cfdi:Year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2015</cfdi:Year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lim/ontologies/2017/0/untitled-ontology-62#Question_Answering -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lim/ontologies/2017/0/untitled-ontology-62#Question_Answering">
+        <rdf:type rdf:resource="http://knowitive.com/ontologies/cfdi#Topic"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 
