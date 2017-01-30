@@ -1,0 +1,178 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/lim/ontologies/2017/0/untitled-ontology-62#"
+     xml:base="http://www.semanticweb.org/lim/ontologies/2017/0/untitled-ontology-62"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:cfdi="http://knowitive.com/ontologies/cfdi#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/lim/ontologies/2017/0/untitled-ontology-62"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://knowitive.com/ontologies/cfdi#hasAuthor -->
+
+    <owl:ObjectProperty rdf:about="http://knowitive.com/ontologies/cfdi#hasAuthor"/>
+    
+
+
+    <!-- http://knowitive.com/ontologies/cfdi#hasCite -->
+
+    <owl:ObjectProperty rdf:about="http://knowitive.com/ontologies/cfdi#hasCite">
+        <rdfs:domain rdf:resource="http://knowitive.com/ontologies/cfdi#Paper"/>
+        <rdfs:range rdf:resource="http://knowitive.com/ontologies/cfdi#Cites"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://knowitive.com/ontologies/cfdi#hasTitle -->
+
+    <owl:ObjectProperty rdf:about="http://knowitive.com/ontologies/cfdi#hasTitle"/>
+    
+
+
+    <!-- http://knowitive.com/ontologies/cfdi#hasYear -->
+
+    <owl:ObjectProperty rdf:about="http://knowitive.com/ontologies/cfdi#hasYear"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://knowitive.com/ontologies/cfdi#Uri -->
+
+    <owl:DatatypeProperty rdf:about="http://knowitive.com/ontologies/cfdi#Uri"/>
+    
+
+
+    <!-- http://knowitive.com/ontologies/cfdi#Year -->
+
+    <owl:DatatypeProperty rdf:about="http://knowitive.com/ontologies/cfdi#Year"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://knowitive.com/ontologies/cfdi#Abstract -->
+
+    <owl:Class rdf:about="http://knowitive.com/ontologies/cfdi#Abstract"/>
+    
+
+
+    <!-- http://knowitive.com/ontologies/cfdi#Author -->
+
+    <owl:Class rdf:about="http://knowitive.com/ontologies/cfdi#Author"/>
+    
+
+
+    <!-- http://knowitive.com/ontologies/cfdi#Cites -->
+
+    <owl:Class rdf:about="http://knowitive.com/ontologies/cfdi#Cites"/>
+    
+
+
+    <!-- http://knowitive.com/ontologies/cfdi#Introduction -->
+
+    <owl:Class rdf:about="http://knowitive.com/ontologies/cfdi#Introduction"/>
+    
+
+
+    <!-- http://knowitive.com/ontologies/cfdi#Paper -->
+
+    <owl:Class rdf:about="http://knowitive.com/ontologies/cfdi#Paper"/>
+    
+
+
+    <!-- http://knowitive.com/ontologies/cfdi#Title -->
+
+    <owl:Class rdf:about="http://knowitive.com/ontologies/cfdi#Title"/>
+    
+
+
+    <!-- http://knowitive.com/ontologies/cfdi#Topic -->
+
+    <owl:Class rdf:about="http://knowitive.com/ontologies/cfdi#Topic"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://knowitive.com/ontologies/cfdi#Bast_Hannah -->
+
+    <owl:NamedIndividual rdf:about="http://knowitive.com/ontologies/cfdi#Bast_Hannah">
+        <rdf:type rdf:resource="http://knowitive.com/ontologies/cfdi#Author"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowitive.com/ontologies/cfdi#More_Accurate_Question_Answering_on_Freebase -->
+
+    <owl:NamedIndividual rdf:about="http://knowitive.com/ontologies/cfdi#More_Accurate_Question_Answering_on_Freebase">
+        <rdf:type rdf:resource="http://knowitive.com/ontologies/cfdi#Title"/>
+        <cfdi:hasAuthor rdf:resource="http://knowitive.com/ontologies/cfdi#Bast_Hannah"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowitive.com/ontologies/cfdi#Petr_Baudiš -->
+
+    <owl:NamedIndividual rdf:about="http://knowitive.com/ontologies/cfdi#Petr_Baudiš">
+        <rdf:type rdf:resource="http://knowitive.com/ontologies/cfdi#Author"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowitive.com/ontologies/cfdi#Systems_and_Approaches_for_Question_Answering -->
+
+    <owl:NamedIndividual rdf:about="http://knowitive.com/ontologies/cfdi#Systems_and_Approaches_for_Question_Answering">
+        <rdf:type rdf:resource="http://knowitive.com/ontologies/cfdi#Title"/>
+        <cfdi:hasAuthor rdf:resource="http://knowitive.com/ontologies/cfdi#Petr_Baudiš"/>
+        <cfdi:hasCite rdf:resource="http://knowitive.com/ontologies/cfdi#Systems_and_Approaches_for_Question_Answering"/>
+        <cfdi:Uri rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://s3-us-west-1.amazonaws.com/phdsemantics/papers/Baudis%CC%8C+-+2015+-+Systems+and+Approaches+for+Question+Answering.pdf</cfdi:Uri>
+        <cfdi:Year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2015</cfdi:Year>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+
